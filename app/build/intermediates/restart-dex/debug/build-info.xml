@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="25919895031406"
+    token="5296965606167505155" >
+
+    <task
+        name="javac"
+        duration="265" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="64" />
+    <task
+        name="verifier"
+        duration="12" />
+
+    <artifact
+        location="/home/rud/git/gamadroneapp/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="25919895031406" >
+        <artifact
+            location="/home/rud/git/gamadroneapp/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

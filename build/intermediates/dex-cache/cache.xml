@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6ba3109c132bcd62db2a67de4f8e4418df019a39">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_bae2983ae087aedce573fb99ad0d25a2919e58f0/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_7721861e77a0d0f9306ccebc02580875890fe8f4/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_f447e306f8724f08db067d4ec11724ed6476fd5d/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_385a14426d50f05ea1a7d7769941a3160d06ec5a/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_35ea32a39ba242479eba04cd1f0fb67eb514b038/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_1a2537dcb350c6ba0c967ed32fe74c8ae069b48b/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_22febed4f20c943b728af4c31a8b77e1fc02086d/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_c3f786ed9d89bcfa46ddc4f5368117bdd71857ca/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_a0e1a0fccbe45f82aa43e982a6a9b2615c1066ad/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_15ca36d782ed77503486d8d22bbb69332e0724ad/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="68b28302572c3b931bf076d5897341bcf905e056">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c038d11c2ae85b5c413b449083cda75a0af25054/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_da71c4336120673769022b92cce4c22c3c6ce8c8/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_e801a1d08f0f5e52ab81ad5c3f9643b0d402b7ef/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_a4cfc4703838bfca46a146b5a61de95aeb2b021b/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_21ffe46c5515d0c8926d4faf3f94f483798dfc18/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_e8767801069868c4a660fa8a2394df8e9343d351/classes.dex" />
+    </item>
+    <item
+        jar="/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_86a171f0277e05445f13bbe5c11479849b95c97e/classes.dex" />
+    </item>
+
+</items>
