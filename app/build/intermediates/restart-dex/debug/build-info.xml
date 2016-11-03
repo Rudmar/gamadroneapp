@@ -4,26 +4,46 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="25919895031406"
+    timestamp="4921288263352"
     token="5296965606167505155" >
 
     <task
         name="javac"
-        duration="265" />
+        duration="72" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="64" />
+        duration="20" />
     <task
         name="verifier"
-        duration="12" />
+        duration="1" />
 
     <artifact
-        location="/home/rud/git/gamadroneapp/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
+        type="DEX" />
 
+    <build timestamp="3851520518313" >
+        <artifact
+            location="/home/rud/git/gamadroneapp/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="4437180522460"
+        verifier="METHOD_ADDED" >
+        <artifact
+            location="/home/rud/git/gamadroneapp/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="4921288263352" >
+        <artifact
+            location="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
+            type="DEX" />
+    </build>
     <build timestamp="25919895031406" >
         <artifact
             location="/home/rud/git/gamadroneapp/app/build/outputs/apk/app-debug.apk"

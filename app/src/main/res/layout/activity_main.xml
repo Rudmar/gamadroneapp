@@ -11,32 +11,53 @@
     android:background="#ff6eb6ff"
     android:onClick="restartCounter">
 
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bluetooth"
-        android:id="@+id/turnOn"
-        android:onClick="turnOn"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/statusMessage"
-        android:layout_alignTop="@+id/turnOn"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <ToggleButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New ToggleButton"
-        android:id="@+id/search"
+        android:text="On"
+        android:id="@+id/button1"
+        android:layout_below="@+id/statusMessage"
+        android:layout_toRightOf="@+id/statusMessage"
+        android:layout_toEndOf="@+id/statusMessage"
         android:layout_marginTop="35dp"
-        android:layout_below="@+id/turnOn"
-        android:layout_alignLeft="@+id/turnOn"
-        android:layout_alignStart="@+id/turnOn" />
+        android:onClick="turnOn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button1"
+        android:layout_toRightOf="@+id/statusMessage"
+        android:layout_toEndOf="@+id/statusMessage"
+        android:layout_marginTop="36dp"
+        android:onClick="turnOff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button3"
+        android:layout_alignTop="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button4"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
 
 </RelativeLayout>
