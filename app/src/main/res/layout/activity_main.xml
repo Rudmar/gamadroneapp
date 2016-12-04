@@ -8,56 +8,72 @@
     android:paddingTop="4dp"
     android:paddingBottom="4dp"
     tools:context=".MainActivity"
-    android:background="#ff6eb6ff"
+    android:background="#1fd6cd"
     android:onClick="restartCounter">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/statusMessage"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="On"
-        android:id="@+id/button1"
-        android:layout_below="@+id/statusMessage"
-        android:layout_toRightOf="@+id/statusMessage"
-        android:layout_toEndOf="@+id/statusMessage"
-        android:layout_marginTop="35dp"
-        android:onClick="turnOn" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Off"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button1"
-        android:layout_toRightOf="@+id/statusMessage"
-        android:layout_toEndOf="@+id/statusMessage"
-        android:layout_marginTop="36dp"
-        android:onClick="turnOff" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button3"
-        android:layout_alignTop="@+id/button1"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="38dp"
-        android:layout_marginEnd="38dp" />
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button4"
-        android:layout_alignBottom="@+id/button2"
+        android:text="Ligar Bluetooth"
+        android:id="@+id/button1"
+        android:onClick="turnOn"
+        android:background="@color/bright_foreground_material_dark"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desligar Bluetooth"
+        android:id="@+id/button2"
+        android:onClick="turnOff"
+        android:background="@color/bright_foreground_material_dark"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/button1"
         android:layout_alignLeft="@+id/button3"
         android:layout_alignStart="@+id/button3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teste Conexão"
+        android:id="@+id/button3"
+        android:background="@color/bright_foreground_material_dark"
+        android:layout_above="@+id/button2"
+        android:layout_toLeftOf="@+id/connect"
+        android:layout_toStartOf="@+id/connect" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:text="Listar aparelhos"
+        android:onClick="list"
+        android:background="@color/bright_foreground_material_dark"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectar"
+        android:id="@+id/connect"
+        android:onClick="tryBT"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp" />
 
 </RelativeLayout>

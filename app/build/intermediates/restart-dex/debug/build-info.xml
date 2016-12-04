@@ -1,50 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="armeabi-v7a,armeabi"
     api-level="23"
-    density="xxhdpi"
+    density="xhdpi"
     format="7"
-    timestamp="4921288263352"
-    token="5296965606167505155" >
+    timestamp="1173197817228"
+    token="5296965606167505155"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="72" />
+        duration="185" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="558" />
     <task
         name="instant-run-transform"
-        duration="20" />
+        duration="40" />
     <task
         name="verifier"
-        duration="1" />
+        duration="12" />
 
     <artifact
-        location="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-        type="DEX" />
+        location="/home/rud/git/gamadroneapp/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
-    <build timestamp="3851520518313" >
+    <build timestamp="926054477229" >
         <artifact
             location="/home/rud/git/gamadroneapp/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="4437180522460"
-        verifier="METHOD_ADDED" >
-        <artifact
-            location="/home/rud/git/gamadroneapp/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="4921288263352" >
-        <artifact
-            location="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="25919895031406" >
+    <build timestamp="15304276350633" >
         <artifact
             location="/home/rud/git/gamadroneapp/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
