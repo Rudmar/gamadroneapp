@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,10 +33,9 @@ public class MainActivity extends AppCompatActivity {
     BluetoothDevice mmDevice;
     BluetoothSocket mmSocket = null;
     public static TextView statusMessage;
+    public static TextView velocidade;
     private BluetoothAdapter bluetooth;
     Set<BluetoothDevice> pairedDevices;
-    final byte delimiter = 33;
-    int readBufferPosition = 0;
 
     final Handler handler = new Handler();
 
@@ -43,10 +43,14 @@ public class MainActivity extends AppCompatActivity {
         UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb"); //Standard SerialPortService ID
         try {
             mmSocket = mmDevice.createRfcommSocketToServiceRecord(uuid);
-            if (!mmSocket.isConnected()){
+            if (!mmSocket.isConnected()) {
                 mmSocket.connect();
-                statusMessage.setText("Socket conectado");
             }
+
+                String send = msg2send;
+
+            OutputStream mmOutputStream = mmSocket.getOutputStream();
+            mmOutputStream.write(send.getBytes());
 
         } catch (IOException e) {
             // TODO Auto-generated catch block
@@ -55,9 +59,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void tryBT(View view){
-        sendBtMsg("WTF!");
-        statusMessage.setText("Mensagem enviada com sucesso");
+    public void receiveBtMsg(){
+
+            //InputStream mmInputStream = mmSocket.getInputStream();
+            //mmInputStream.read(rd.getBytes());
+            //velocidade.setText(mmInputStream.read(rd.getBytes()));
+
     }
 
     @Override
@@ -65,19 +72,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Handler handler = new Handler();
-
         statusMessage = (TextView) findViewById(R.id.statusMessage);
+        velocidade = (TextView) findViewById(R.id.velocidade);
 
         bluetooth = BluetoothAdapter.getDefaultAdapter();
 
         Set<BluetoothDevice> pairedDevices = bluetooth.getBondedDevices();
-        if(pairedDevices.size() > 0)
-        {
-            for(BluetoothDevice device : pairedDevices)
-            {
-                if(device.getName().equals("ubuntu-0")) //Note, you will need to change this to match the name of your device
-                {
+        if(pairedDevices.size() > 0) {
+            for(BluetoothDevice device : pairedDevices){
+                if(device.getName().equals("ubuntu-0")){
                     Log.e("RASPBERRY",device.getName());
                     mmDevice = device;
                     String name;
@@ -150,6 +153,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+    }
+
+    public void tryBT(View view){
+        sendBtMsg("Esta mensagem foi enviada do meu APP GamaDrone");
+        receiveBtMsg();
     }
 
 }

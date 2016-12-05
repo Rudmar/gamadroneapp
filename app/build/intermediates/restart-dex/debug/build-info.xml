@@ -4,36 +4,57 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="1173197817228"
+    timestamp="42821367977168"
     token="5296965606167505155"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="185" />
+        duration="82" />
     <task
         name="instant-run-dex"
-        duration="558" />
+        duration="509" />
     <task
         name="instant-run-transform"
-        duration="40" />
+        duration="20" />
     <task
         name="verifier"
-        duration="12" />
+        duration="1" />
 
     <artifact
         location="/home/rud/git/gamadroneapp/app/build/intermediates/reload-dex/debug/classes.dex"
         type="RELOAD_DEX" />
 
-    <build timestamp="926054477229" >
+    <build timestamp="41640245051741" >
         <artifact
             location="/home/rud/git/gamadroneapp/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="15304276350633" >
+    <build timestamp="42379616888540" >
         <artifact
-            location="/home/rud/git/gamadroneapp/app/build/outputs/apk/app-debug.apk"
-            type="MAIN" />
+            location="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="42487258101229"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/rud/git/gamadroneapp/app/build/intermediates/builds/debug/42487258101229/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="42763614497227"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/rud/git/gamadroneapp/app/build/intermediates/builds/debug/42763614497227/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="42821367977168"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/rud/git/gamadroneapp/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
