@@ -18,11 +18,20 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.apache.commons.io.IOUtils;
+
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.StringWriter;
+import java.net.Socket;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,49 +42,33 @@ public class MainActivity extends AppCompatActivity {
     BluetoothDevice mmDevice;
     BluetoothSocket mmSocket = null;
     public static TextView statusMessage;
-    public static TextView velocidade;
+    public static TextView velocity;
     private BluetoothAdapter bluetooth;
     Set<BluetoothDevice> pairedDevices;
-
-    final Handler handler = new Handler();
-
-    public void sendBtMsg(String msg2send){
-        UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb"); //Standard SerialPortService ID
-        try {
-            mmSocket = mmDevice.createRfcommSocketToServiceRecord(uuid);
-            if (!mmSocket.isConnected()) {
-                mmSocket.connect();
-            }
-
-                String send = msg2send;
-
-            OutputStream mmOutputStream = mmSocket.getOutputStream();
-            mmOutputStream.write(send.getBytes());
-
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-    }
-
-    public void receiveBtMsg(){
-
-            //InputStream mmInputStream = mmSocket.getInputStream();
-            //mmInputStream.read(rd.getBytes());
-            //velocidade.setText(mmInputStream.read(rd.getBytes()));
-
-    }
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         statusMessage = (TextView) findViewById(R.id.statusMessage);
-        velocidade = (TextView) findViewById(R.id.velocidade);
+        velocity = (TextView) findViewById(R.id.velocidade);
 
         bluetooth = BluetoothAdapter.getDefaultAdapter();
+
+        final Handler handler = new Handler();
+
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                Random generator = new Random();
+                int vel = generator.nextInt(40 - 5) + 5;
+                velocity.setText(vel + " KM/H");
+                handler.postDelayed(this, 1000);
+            }
+        };
+
+        handler.postDelayed(runnable, 1000);
 
         Set<BluetoothDevice> pairedDevices = bluetooth.getBondedDevices();
         if(pairedDevices.size() > 0) {
@@ -94,6 +87,26 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void sendBtMsg(String msg2send){
+        UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb"); //Standard SerialPortService ID
+        try {
+            mmSocket = mmDevice.createRfcommSocketToServiceRecord(uuid);
+            if (!mmSocket.isConnected()) {
+                mmSocket.connect();
+            }
+
+            String send = msg2send;
+
+            OutputStream mmOutputStream = mmSocket.getOutputStream();
+            mmOutputStream.write(send.getBytes());
+
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+    }
+
     public void turnOn(View view) {
 
         if (bluetooth == null){
@@ -107,7 +120,6 @@ public class MainActivity extends AppCompatActivity {
             Intent getVisible = new Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
             startActivityForResult(getVisible, 0);
             statusMessage.setText("Bluetooth visivel para\noutros dispositivos");
-
         }
 
     }
@@ -156,8 +168,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tryBT(View view){
-        sendBtMsg("Esta mensagem foi enviada do meu APP GamaDrone");
-        receiveBtMsg();
+        sendBtMsg("Esta mensagem foi enviada do meu APP GamaDrone\n");
+        sendBtMsg("Teste de mensagem android -> python 1");
+        sendBtMsg("Teste de mensagem android -> python 2");
     }
 
 }

@@ -4,19 +4,19 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="42821367977168"
+    timestamp="53953020177414"
     token="5296965606167505155"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="82" />
+        duration="78" />
     <task
         name="instant-run-dex"
-        duration="509" />
+        duration="580" />
     <task
         name="instant-run-transform"
-        duration="20" />
+        duration="17" />
     <task
         name="verifier"
         duration="1" />
@@ -25,32 +25,18 @@
         location="/home/rud/git/gamadroneapp/app/build/intermediates/reload-dex/debug/classes.dex"
         type="RELOAD_DEX" />
 
-    <build timestamp="41640245051741" >
+    <build timestamp="51578447949755" >
         <artifact
             location="/home/rud/git/gamadroneapp/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="42379616888540" >
+    <build timestamp="53385995439890" >
         <artifact
             location="/home/rud/git/gamadroneapp/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
             type="DEX" />
     </build>
     <build
-        timestamp="42487258101229"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/rud/git/gamadroneapp/app/build/intermediates/builds/debug/42487258101229/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="42763614497227"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/rud/git/gamadroneapp/app/build/intermediates/builds/debug/42763614497227/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="42821367977168"
+        timestamp="53953020177414"
         verifier="COMPATIBLE" >
         <artifact
             location="/home/rud/git/gamadroneapp/app/build/intermediates/reload-dex/debug/classes.dex"

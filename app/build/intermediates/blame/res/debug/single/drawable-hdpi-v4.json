@@ -180,11 +180,11 @@
         "source": "/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "/home/rud/git/gamadroneapp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
-        "source": "/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/rud/git/gamadroneapp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
         "source": "/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/rud/git/gamadroneapp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     }
 ]

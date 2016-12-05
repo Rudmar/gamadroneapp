@@ -64,12 +64,12 @@
         "source": "/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "/home/rud/git/gamadroneapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png",
-        "source": "/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
-    },
-    {
         "merged": "/home/rud/git/gamadroneapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
         "source": "/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/rud/git/gamadroneapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png",
+        "source": "/home/rud/git/gamadroneapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "/home/rud/git/gamadroneapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",

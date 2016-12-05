@@ -2,6 +2,7 @@ import os
 import glob
 import time
 import random
+import struct
 from bluetooth import *
 
 #while True:
@@ -33,18 +34,18 @@ while True:
 	        messageReceived = client_sock.recv(1024)
 	        print messageReceived
 	        info = client_info
-	        print "FFF"
 	       	if len(messageReceived) == 0:
 	       		break
 	       	else:
 	        	print "received: %s from " % messageReceived, info
-			if messageReceived == 'Esta mensagem foi enviada do meu APP GamaDrone':
-				messageSent = 'Esta mensagem foi enviada da minha plataforma Ubuntu'
+			if messageReceived == 'Esta mensagem foi enviada do meu APP GamaDrone\n':
+				messageSent = 'Esta mensagem foi enviada da minha plataforma Ubuntu\n'
+				send = struct.pack('!i', len(messageSent))
 				client_sock.send(messageSent)
 				print "sending: %s" % messageSent
-			else: 
-				messageReceived == 'Message not received'
-				print messageReceived
+			else:
+				pass
+				
 
 	except IOError:
 		pass
