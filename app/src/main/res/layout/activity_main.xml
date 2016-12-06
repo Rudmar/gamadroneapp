@@ -1,5 +1,6 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,91 +20,273 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ligar Bluetooth"
-        android:id="@+id/button1"
-        android:onClick="turnOn"
-        android:background="@color/bright_foreground_material_dark"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Desligar Bluetooth"
-        android:id="@+id/button2"
-        android:onClick="turnOff"
-        android:background="@color/bright_foreground_material_dark"
-        android:layout_marginTop="51dp"
-        android:layout_below="@+id/button1"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/altura"
+        android:id="@+id/altura"
+        android:layout_x="60dp"
+        android:layout_y="79dp"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/conectar"
+        android:layout_alignLeft="@+id/ligar"
+        android:layout_alignStart="@+id/ligar" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Teste Conexão"
-        android:id="@+id/button3"
-        android:background="@color/bright_foreground_material_dark"
-        android:layout_above="@+id/button2"
-        android:layout_toLeftOf="@+id/connect"
-        android:layout_toStartOf="@+id/connect" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button4"
-        android:text="Listar aparelhos"
-        android:onClick="list"
-        android:background="@color/bright_foreground_material_dark"
-        android:layout_marginRight="31dp"
-        android:layout_marginEnd="31dp"
-        android:layout_alignTop="@+id/button2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Conectar"
-        android:id="@+id/connect"
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/conectar"
         android:onClick="tryBT"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="89dp" />
+        android:id="@+id/conectar"
+        android:layout_x="170dp"
+        android:layout_y="240dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/dispositivos"
+        android:id="@+id/dispositivos"
+        android:onClick="list"
+        android:layout_x="277dp"
+        android:layout_y="319dp"
+        android:layout_alignTop="@+id/voo"
+        android:layout_alignLeft="@+id/testar"
+        android:layout_alignStart="@+id/testar" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Velocidade de Voo"
+        android:text="Velocidade de Voo: "
         android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ProgressBar
-        style="?android:attr/progressBarStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/bateria"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/button1"
-        android:layout_toEndOf="@+id/button1" />
+        android:layout_marginBottom="16dp"
+        android:layout_alignBottom="@+id/imageView18"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Altura do Drone: "
+        android:id="@+id/alturatext"
+        android:layout_alignBottom="@+id/altura"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="19dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/ligar"
+        android:onClick="turnOn"
+        android:id="@+id/ligar"
+        android:layout_x="54dp"
+        android:layout_y="321dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_below="@+id/conectar"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/voo"
+        android:id="@+id/voo"
+        android:layout_x="166dp"
+        android:layout_y="311dp"
+        android:layout_alignTop="@+id/ligar"
+        android:layout_alignLeft="@+id/conectar"
+        android:layout_alignStart="@+id/conectar"
+        android:layout_above="@+id/textView7" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="72dp"
+        app:srcCompat="@drawable/desligar"
+        android:id="@+id/desligar"
+        android:onClick="turnOff"
+        android:layout_x="52dp"
+        android:layout_y="401dp"
+        android:layout_above="@+id/statusMessage"
+        android:layout_alignLeft="@+id/ligar"
+        android:layout_alignStart="@+id/ligar" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/pouso"
+        android:id="@+id/pouso"
+        android:layout_x="168dp"
+        android:layout_y="419dp"
+        android:layout_alignTop="@+id/desligar"
+        android:layout_alignLeft="@+id/voo"
+        android:layout_alignStart="@+id/voo"
+        android:layout_above="@+id/textView10" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="72dp"
+        app:srcCompat="@drawable/testarconeccao"
+        android:id="@+id/testar"
+        android:layout_x="273dp"
+        android:layout_y="403dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_above="@+id/statusMessage"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/velocidade"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignLeft="@+id/dispositivos"
+        android:layout_alignStart="@+id/dispositivos" />
+
+    <TextView
+        android:text="Conectar"
+        android:textAlignment="center"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/conectar"
+        android:layout_alignLeft="@+id/conectar"
+        android:layout_alignStart="@+id/conectar"
+        android:layout_alignRight="@+id/conectar"
+        android:layout_alignEnd="@+id/conectar" />
+
+    <TextView
+        android:text="Ativar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textAlignment="center"
+        android:id="@+id/textView6"
+        android:layout_above="@+id/desligar"
+        android:layout_toLeftOf="@+id/alturatext"
+        android:layout_alignLeft="@+id/desligar"
+        android:layout_alignStart="@+id/desligar" />
+
+    <TextView
+        android:text="Voar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textAlignment="center"
+        android:id="@+id/textView7"
+        android:layout_above="@+id/pouso"
+        android:layout_alignLeft="@+id/pouso"
+        android:layout_alignStart="@+id/pouso"
+        android:layout_alignRight="@+id/pouso"
+        android:layout_alignEnd="@+id/pouso" />
+
+    <TextView
+        android:text="Dispositivos"
+        android:textAlignment="center"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/textView8"
+        android:layout_above="@+id/testar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:text="Desativar"
+        android:textAlignment="center"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/desligar"
+        android:layout_alignLeft="@+id/desligar"
+        android:layout_alignStart="@+id/desligar"
+        android:id="@+id/textView9"
+        android:layout_alignRight="@+id/desligar"
+        android:layout_alignEnd="@+id/desligar" />
+
+    <TextView
+        android:text="Pousar"
+        android:textAlignment="center"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/desligar"
+        android:layout_alignRight="@+id/pouso"
+        android:layout_alignEnd="@+id/pouso"
+        android:id="@+id/textView10"
+        android:layout_alignLeft="@+id/pouso"
+        android:layout_alignStart="@+id/pouso" />
+
+    <TextView
+        android:text="Testar Conexão"
+        android:textAlignment="center"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/textView11"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/testar"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/velocidade"
+        android:id="@+id/imageView18"
+        android:layout_above="@+id/altura"
+        android:layout_alignLeft="@+id/altura"
+        android:layout_alignStart="@+id/altura"
+        android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/alturaTexts"
+        android:layout_alignBaseline="@+id/alturatext"
+        android:layout_alignBottom="@+id/alturatext"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bateria: "
+        android:layout_alignTop="@+id/imageView19"
+        android:layout_toRightOf="@+id/imageView19"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView12"
+        android:layout_alignRight="@+id/conectar"
+        android:layout_alignEnd="@+id/conectar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bateria"
+        android:id="@+id/imageView19"
+        android:layout_above="@+id/imageView18"
+        android:layout_alignRight="@+id/imageView18"
+        android:layout_alignEnd="@+id/imageView18"
+        android:layout_alignLeft="@+id/imageView18"
+        android:layout_alignStart="@+id/imageView18" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:id="@+id/bateriaText" />
+
 
 </RelativeLayout>

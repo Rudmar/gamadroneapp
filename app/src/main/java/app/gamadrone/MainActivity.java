@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
     BluetoothSocket mmSocket = null;
     public static TextView statusMessage;
     public static TextView velocity;
+    public static TextView altura;
+    public static TextView bateria;
     private BluetoothAdapter bluetooth;
     Set<BluetoothDevice> pairedDevices;
     
@@ -53,10 +55,16 @@ public class MainActivity extends AppCompatActivity {
 
         statusMessage = (TextView) findViewById(R.id.statusMessage);
         velocity = (TextView) findViewById(R.id.velocidade);
+        altura = (TextView) findViewById(R.id.alturaTexts);
+        bateria = (TextView) findViewById(R.id.bateriaText);
 
         bluetooth = BluetoothAdapter.getDefaultAdapter();
 
         final Handler handler = new Handler();
+        final Handler handler2 = new Handler();
+
+        altura.setText("3 m");
+        bateria.setText("40 %");
 
         Runnable runnable = new Runnable() {
             @Override
@@ -67,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
                 handler.postDelayed(this, 1000);
             }
         };
-
         handler.postDelayed(runnable, 1000);
 
         Set<BluetoothDevice> pairedDevices = bluetooth.getBondedDevices();
